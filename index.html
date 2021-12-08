@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      /* user-select: none; */
+    }
+
+    #bg {
+      background: url(./20993.jpg)no-repeat center/cover;
+      width: 100%;
+      height: 100vh;
+      z-index: -1;
+    }
+
+    .row {
+      height: 300px;
+      width: 100%;
+    }
+
+    .col-md-2 {
+      height: 100%;
+      flex-basis: 100%;
+      border: 2px solid white;
+    }
+
+    h1 {
+      line-height: 300px;
+    }
+
+    @media (min-width: 768px) {
+      #box {
+        height: 100vh;
+        overflow-y: hidden
+      }
+
+      h1 {
+        line-height: 500px;
+      }
+
+      .row {
+        height: 500px;
+        width: 100vw;
+      }
+
+      .col-md-2 {
+        width: 100%;
+        flex-basis: 400px;
+        border: 2px solid white;
+      }
+    }
+
+    #col2 {
+      backdrop-filter: none;
+    }
+
+    #col3 {
+      backdrop-filter: grayscale(1);
+    }
+
+    #col4 {
+      backdrop-filter: brightness(1.5)
+    }
+
+    #col5 {
+      backdrop-filter: blur(5px);
+    }
+
+    #col6 {
+      backdrop-filter: contrast(0.8);
+    }
+
+    #col7 {
+      backdrop-filter: invert(0.7);
+    }
+
+    #col8 {
+      backdrop-filter: opacity(0.4);
+    }
+
+    #col9 {
+      backdrop-filter: sepia(0.4)
+    }
+
+    #col10 {
+      backdrop-filter: saturate(1.8);
+    }
+
+    #col11 {
+      backdrop-filter: hue-rotate(120deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="bg" class="position-fixed "></div>
+  <div id="box" class="container-fluid d-flex align-content-center flex-wrap flex-md-row flex-column text-white">
+    <div class="row align-content-md-center flex-md-nowrap">
+      <div id="col1" class="col-12 col-md-2">
+        <h1 class="text-center">backdrop-filter效果</h1>
+      </div>
+      <div id="col2" class="col-12 col-md-2 fs-1 ">backdrop-filter: none</div>
+      <div id="col3" class="col-12 col-md-2 fs-1 ">backdrop-filter: grayscale(1)</div>
+      <div id="col4" class="col-12 col-md-2 fs-1 ">backdrop-filter: brightness(1.5)</div>
+      <div id="col5" class="col-12 col-md-2 fs-1 ">backdrop-filter: blur(5px)</div>
+      <div id="col6" class="col-12 col-md-2 fs-1 ">backdrop-filter: contrast(0.8)</div>
+      <div id="col7" class="col-12 col-md-2 fs-1 ">backdrop-filter: invert(0.7)</div>
+      <div id="col8" class="col-12 col-md-2 fs-1 ">backdrop-filter: opacity(0.4)</div>
+      <div id="col9" class="col-12 col-md-2 fs-1 ">backdrop-filter: sepia(0.4)</div>
+      <div id="col10" class="col-12 col-md-2 fs-1 ">backdrop-filter: saturate(1.8)</div>
+      <div id="col11" class="col-12 col-md-2 fs-1 ">backdrop-filter: hue-rotate(120deg)</div>
+    </div>
+  </div>
+</body>
+
+</html>
